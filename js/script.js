@@ -43,6 +43,7 @@ alert(5 + +"juice");
 alert(5 + +"3");
 */
 
+/*
 let incr = 5,
 	decr = 10;
 
@@ -59,3 +60,6 @@ decr--;
 
 alert(`Increment = ${incr};`);
 alert(`Decrement = ${decr};`);
+*/
+
+let message;
