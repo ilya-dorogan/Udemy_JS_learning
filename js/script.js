@@ -90,3 +90,49 @@ const test = "16.7 px";
 console.log(parseInt(test)); //возвращает int
 console.log(parseFloat(test)); //возвращает float
 */
+
+
+// function first() {
+// 	setTimeout(function () {
+// 		alert(1);
+// 	});
+// }
+
+// function second() {
+// 	alert(2);
+// }
+
+// first();
+// second();
+
+// function learnJS(lang, callback) {
+// 	alert(`Im study: ${lang}`);
+// 	callback();
+// }
+
+// function endLesson() {
+// 	alert('Lesson completed!');
+// }
+
+// learnJS('JavaScript', endLesson);
+
+const info = {
+	name: 'Ilya',
+	soname: 'Dorogan',
+	age: 20,
+	colors: {
+		main: 'white',
+		border: 'red',
+		dots: 'green'
+	}
+};
+
+for (let key in info) {
+	if (typeof (info[key]) === 'object') {
+		for (let i in info[key]) {
+			alert(`Property ${i} is: ${info[key][i]}.`); //перебор объекта и обьекта внутри объкта
+		}
+	} else {
+		alert(`Property ${key} is: ${info[key]}.`);
+	}
+}
