@@ -62,4 +62,31 @@ alert(`Increment = ${incr};`);
 alert(`Decrement = ${decr};`);
 */
 
-let message;
+/*
+const str = 'test text';
+const arr = [1, 3, 4, 5, 4, 54, 2];
+
+alert(str.length);
+alert(str[3]);
+alert(arr.length);
+*/
+
+/*
+const basket = "some fruits";
+
+alert(basket.indexOf('t'));
+alert(basket.slice(3));
+alert(basket.substring(3, 8));
+alert(basket.substr(3, 8));
+*/
+
+/*
+const num = 13.6;
+
+alert(Math.round(num)); //возвращает округленное значение
+
+const test = "16.7 px";
+
+console.log(parseInt(test)); //возвращает int
+console.log(parseFloat(test)); //возвращает float
+*/
