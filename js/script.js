@@ -71,6 +71,8 @@ alert(str[3]);
 alert(arr.length);
 */
 
+/*LESSON 17 Методы и свойства строк и чисел*/
+
 /*
 const basket = "some fruits";
 
@@ -90,6 +92,8 @@ const test = "16.7 px";
 console.log(parseInt(test)); //возвращает int
 console.log(parseFloat(test)); //возвращает float
 */
+
+/*LESSON 19 Callback- функции*/
 
 /*
 function first() {
@@ -116,6 +120,8 @@ function endLesson() {
 
 learnJS('JavaScript', endLesson);
 */
+
+/*LESSON 20 Объекты, деструктуризация объектов (ES6)*/
 
 /*
 const info = {
@@ -164,6 +170,8 @@ for (let key in info) {
 alert(`Keys: ${count}.`); //количество ключей
 */
 
+/*LESSON 21 021 Массивы и псевдомассивы*/
+
 /*
 const array = [0, 2, 26, 14, 1, 9];
 
@@ -205,4 +213,115 @@ const str = prompt("", "");
 const products = str.split(", ");
 products.sort();
 alert(products.join('; '));
+*/
+
+/*LESSON 22 Передача по ссылке или по значению, Spread оператор (ES6-ES9)*/
+
+/*
+let a = 5,
+	b = a;
+
+b = b + 5;
+
+console.log(a);
+console.log(b);
+
+const obj = {
+	a: 5,
+	b: 1,
+};
+
+console.log(obj);
+
+const copy = obj; //передаем ссылку на obj
+copy.a = 10;
+
+console.log(copy);
+*/
+
+/*
+function copyObj(mainObj) { //поверхностное копирование
+	let objCopy = {};
+	let key;
+
+	for (key in mainObj) {
+		objCopy[key] = mainObj[key];
+	}
+	return objCopy;
+}
+
+const numbers = {
+	a: 3,
+	b: 6,
+	c: 0,
+	x: {
+		y: 4,
+		z: 8,
+	}
+};
+
+const newNumbers = copyObj(numbers);
+
+newNumbers.a = 22;
+newNumbers.x.z = 666;
+
+// console.log(numbers);
+// console.log(newNumbers);
+
+const add = {
+	d: 9,
+	e: 234,
+};
+
+console.log(Object.assign(numbers, add)); // слияние
+
+const clone = Object.assign({}, add); //поверхностная копия add в clone
+
+clone.d = 9119;
+
+// console.log(add);
+// console.log(clone);
+
+const oldArr = [0, 1, 2, 3];
+const newArr = oldArr.slice(); //копия массива 
+
+newArr[2] = 'wadawdwad';
+
+console.log(newArr);
+console.log(oldArr);
+*/
+
+/*
+const video = ['youtube', 'vimeo', 'vine', 'tiktok'],
+	blogs = ['DTF', 'blogger', 'lifejournal'],
+	internet = [...video, ...blogs, 'vk', 'inst', 'fb'];
+
+console.log(internet);
+*/
+
+/*
+function log(a, b, c) {
+	console.log(a);
+	console.log(b);
+	console.log(c);
+}
+
+const num = [2, 5, 7];
+
+log(...num);
+*/
+
+/*
+const arr = ['a', 'b', 'c'];
+
+const newArr = [...arr];
+
+const objSpread = {
+	one: 1,
+	two: 2,
+};
+
+const newObj = {
+	...objSpread
+};
 */
