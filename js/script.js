@@ -91,31 +91,33 @@ console.log(parseInt(test)); //возвращает int
 console.log(parseFloat(test)); //возвращает float
 */
 
+/*
+function first() {
+	setTimeout(function () {
+		alert(1);
+	});
+}
 
-// function first() {
-// 	setTimeout(function () {
-// 		alert(1);
-// 	});
-// }
+function second() {
+	alert(2);
+}
 
-// function second() {
-// 	alert(2);
-// }
+first();
+second();
 
-// first();
-// second();
+function learnJS(lang, callback) {
+	alert(`Im study: ${lang}`);
+	callback();
+}
 
-// function learnJS(lang, callback) {
-// 	alert(`Im study: ${lang}`);
-// 	callback();
-// }
+function endLesson() {
+	alert('Lesson completed!');
+}
 
-// function endLesson() {
-// 	alert('Lesson completed!');
-// }
+learnJS('JavaScript', endLesson);
+*/
 
-// learnJS('JavaScript', endLesson);
-
+/*
 const info = {
 	name: 'Ilya',
 	soname: 'Dorogan',
@@ -129,7 +131,9 @@ const info = {
 		alert(`Text.`);
 	}
 };
+*/
 
+/*
 const {
 	main,
 	border,
@@ -137,6 +141,7 @@ const {
 } = info.colors; //деструктуризация вложенного объекта colors 
 
 alert(border);
+*/
 
 //info.showText(); //вызов метода showText обьекта info
 
@@ -157,4 +162,47 @@ for (let key in info) {
 }
 
 alert(`Keys: ${count}.`); //количество ключей
+*/
+
+/*
+const array = [0, 2, 26, 14, 1, 9];
+
+array.sort(compareNum);
+alert(array);
+
+function compareNum(a, b) {
+	return a - b; //помогает отсотрировать числа
+}
+*/
+
+/*
+array.forEach(function (item, i, array) {
+	console.log(`${i}: ${item} in array ${array}`); //перебор массива
+});
+*/
+
+//console.log(array.length);
+
+/*
+array.pop(); //удалить последний эллемент.
+array.push(10); //добавить эллемент в конец
+
+console.log(array);
+*/
+
+/*
+for (let i = 0; i < array.length; i++) {
+	console.log(array[i]); //перебор массива
+}
+*/
+
+/*
+for (let value of array) {
+	console.log(value); //перебор для массивоподобных сущностей
+}
+
+const str = prompt("", "");
+const products = str.split(", ");
+products.sort();
+alert(products.join('; '));
 */
