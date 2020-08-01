@@ -122,17 +122,39 @@ const info = {
 	age: 20,
 	colors: {
 		main: 'white',
-		border: 'red',
+		border: 'lands',
 		dots: 'green'
+	},
+	showText: function () {
+		alert(`Text.`);
 	}
 };
 
+const {
+	main,
+	border,
+	dots
+} = info.colors; //деструктуризация вложенного объекта colors 
+
+alert(border);
+
+//info.showText(); //вызов метода showText обьекта info
+
+//alert(Object.keys(info).length); //массив ключей, при помощи .length можно получить количество
+
+/*
+let count = 0;
 for (let key in info) {
 	if (typeof (info[key]) === 'object') {
 		for (let i in info[key]) {
-			alert(`Property ${i} is: ${info[key][i]}.`); //перебор объекта и обьекта внутри объкта
+			alert(`Property ${i} is: ${info[key][i]}.`); //перебор эл. объекта и вложенного объекта 
+			count++;
 		}
 	} else {
 		alert(`Property ${key} is: ${info[key]}.`);
+		count++;
 	}
 }
+
+alert(`Keys: ${count}.`); //количество ключей
+*/
