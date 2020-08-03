@@ -349,3 +349,5 @@ Object.setPrototypeOf(alex, soldier);
 console.log(alex.weapon);
 console.log(alex.armor);
 */
+
+/*LESSON 25 Отлавливаем ошибки в своем коде при помощи консоли разработчика. Breakpoints.*/
