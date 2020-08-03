@@ -325,3 +325,27 @@ const newObj = {
 	...objSpread
 };
 */
+
+/*LESSON 23 023 Основы ООП, прототипно-ориентированное наследование*/
+
+/*
+const soldier = {
+	health: 400,
+	armor: 150,
+	weapon: true,
+};
+
+const jack = Object.create(soldier);
+
+console.log(jack.weapon);
+console.log(jack.armor);
+
+const alex = {
+	health: 200,
+};
+
+Object.setPrototypeOf(alex, soldier);
+
+console.log(alex.weapon);
+console.log(alex.armor);
+*/
