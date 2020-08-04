@@ -351,3 +351,77 @@ console.log(alex.armor);
 */
 
 /*LESSON 25 Отлавливаем ошибки в своем коде при помощи консоли разработчика. Breakpoints.*/
+
+/*LESSON 26 Динамическая типизация в JS*/
+
+/*
+// To String
+// 1)
+
+let str = null;
+
+console.log((String(str)));
+console.log(typeof (String(str)));
+
+// 2)
+
+console.log(typeof (str + ''));
+
+const num = 5;
+
+console.log('https://vk.com/friends/' + num);
+
+const fontSize = 16 + 'px';
+*/
+
+/*
+// To Number
+// 1)
+
+console.log(typeof (Number('4')));
+
+// 2)
+
+console.log(typeof (+'88'));
+
+//3)
+
+console.log(typeof (parseInt('138px', 10)));
+
+let answer = +prompt('Enter your age', '');
+
+console.log(typeof (answer));
+*/
+
+/*
+//To Boolean
+//ALWAYS false: 0, '', undefined, NaN
+
+//1)
+
+let switcher = null;
+
+if (switcher) {
+	console.log('Work.');
+} else {
+	console.log('Dont work.') // switcher is false
+}
+
+switcher = 1;
+
+if (switcher) {
+	console.log('Work.'); // switcher is true
+} else {
+	console.log('Dont work.')
+}
+
+// 2)
+
+console.log(Boolean(null)); //false
+console.log(Boolean('4')); //true
+
+// 3)
+
+console.log(!!NaN); //false
+console.log(!!45); //true
+*/
