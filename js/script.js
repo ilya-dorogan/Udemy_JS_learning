@@ -482,3 +482,59 @@ hearts.forEach(item => {
 const oneHeart = document.querySelector('.heart');
 console.log(oneHeart); //first element
 */
+
+/*LESSON 29 Действия с элементами на странице*/
+
+/*
+const box = document.getElementById('box'),
+	btns = document.getElementsByTagName('button'), //псевдомассив button
+	circles = document.getElementsByClassName('circle'),
+	wrapper = document.querySelector('.wrapper'),
+	hearts = wrapper.querySelectorAll('.heart'), //внитри wrapper
+	oneHeart = wrapper.querySelector('.heart'); //внитри wrapper
+
+// box.style.backgroundColor = 'blue';
+// box.style.width = '350px';
+
+box.style.cssText = 'background-color:blue; width: 350px';
+
+btns[2].style.borderRadius = '75%';
+
+circles[1].style.backgroundColor = 'green';
+
+// for (let i = 0; i < hearts.length; i++) {
+// 	hearts[i].style.backgroundColor = 'pink';
+// }
+
+hearts.forEach(item => {
+	item.style.backgroundColor = 'black';
+});
+
+const div = document.createElement('div'); //существует только в JS
+// const text = document.createTextNode('Killroy was here!');
+
+div.classList.add('black');
+
+//document.body.append(div);
+wrapper.append(div);
+//wrapper.appendChild(div);
+
+// wrapper.prepend(div);
+
+// wrapper.insertBefore(div, hearts[1]);
+
+//hearts[0].before(div);
+// hearts[0].after(div);
+
+//circles[0].remove();
+// wrapper.removeChild(hearts[0]);
+
+// hearts[2].replaceWith(circles[0]);
+// wrapper.replaceChild(circles[0], hearts[2]);
+
+div.innerHTML = '<h1>Hello world!</h1>'; //можно добавлять HTML
+
+// div.textContent = 'Hello!'; //только текст
+
+div.insertAdjacentHTML('beforebegin', '<h2>Im here!</h2>');
+*/
