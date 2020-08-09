@@ -538,3 +538,38 @@ div.innerHTML = '<h1>Hello world!</h1>'; //можно добавлять HTML
 
 div.insertAdjacentHTML('beforebegin', '<h2>Im here!</h2>');
 */
+
+/*LESSON 31 События и их обработчики*/
+
+/*
+const btns = document.querySelectorAll('button'),
+	overlay = document.querySelector('.overlay');
+
+let i = 0;
+
+const delleteElement = (e) => {
+	console.log(e.currentTarget);
+	console.log(e.type);
+
+	// i++;
+	// if (i == 1) {
+	// 	btn.removeEventListener('click', delleteElement);
+	// }
+};
+
+btns.forEach(btn => {
+	btn.addEventListener('click', delleteElement, {
+		once: true // 1 раз
+	});
+});
+
+// btn.addEventListener('click', delleteElement);
+
+// btn.addEventListener('mouseenter', () => {
+// 	console.log('HOVER WORK!');
+// });
+
+
+// overlay.addEventListener('click', delleteElement);
+// overlay.addEventListener('click', delleteElement);
+*/
