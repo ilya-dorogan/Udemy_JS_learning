@@ -573,3 +573,23 @@ btns.forEach(btn => {
 // overlay.addEventListener('click', delleteElement);
 // overlay.addEventListener('click', delleteElement);
 */
+
+/*LESSON 32 Навигация по DOM - элементам, data-атрибуты, преимущество for_of*/
+
+/*
+console.log(document.documentElement); // full HTML
+
+console.log(document.body.childNodes);
+
+console.log(document.querySelector('[data-current="3"]').nextSibling);
+
+console.log(document.querySelector('[data-current="3"]').nextElementSibling);
+
+for (let node of document.body.childNodes) {
+	if (node.nodeName == '#text') {
+		continue;
+	}
+
+	console.log(node);
+} 
+*/
