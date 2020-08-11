@@ -603,6 +603,7 @@ for (let node of document.body.childNodes) {
 // touchleave
 // touchcancel
 
+/*
 window.addEventListener('DOMContentLoaded', () => {
 	const btn = document.querySelector('.first__button');
 
@@ -625,12 +626,25 @@ window.addEventListener('DOMContentLoaded', () => {
 		console.log('END');
 	});
 });
+*/
 
 // touches
 // targetTouches
 // chengedTouches
 
+/*LESSON 35 Async, defer, динамические скрипты*/
 
+// defer
+// async
+
+const divs = document.querySelectorAll('div');
+
+console.log(divs);
+
+const script = document.createElement('script');
+script.src = 'js/test.js';
+script.async = false;
+document.body.append(script);
 
 
 
