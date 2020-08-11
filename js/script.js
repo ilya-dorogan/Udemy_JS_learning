@@ -144,7 +144,7 @@ const {
 	main,
 	border,
 	dots
-} = info.colors; //деструктуризация вложенного объекта colors 
+} = info.colors; //деструктуризация вложенного объекта colors
 
 alert(border);
 */
@@ -158,7 +158,7 @@ let count = 0;
 for (let key in info) {
 	if (typeof (info[key]) === 'object') {
 		for (let i in info[key]) {
-			alert(`Property ${i} is: ${info[key][i]}.`); //перебор эл. объекта и вложенного объекта 
+			alert(`Property ${i} is: ${info[key][i]}.`); //перебор эл. объекта и вложенного объекта
 			count++;
 		}
 	} else {
@@ -283,7 +283,7 @@ clone.d = 9119;
 // console.log(clone);
 
 const oldArr = [0, 1, 2, 3];
-const newArr = oldArr.slice(); //копия массива 
+const newArr = oldArr.slice(); //копия массива
 
 newArr[2] = 'wadawdwad';
 
@@ -430,7 +430,7 @@ console.log(!!45); //true
 
 /*
 let x = 5;
-alert(x++); // 5 
+alert(x++); // 5
 
 console.log([] + false - null + true); //NaN
 
@@ -446,7 +446,7 @@ console.log(2 && 1 && null && 0 && undefined); // остановиться и в
 
 console.log(!!(a && b) === (a && b)); // !!( a && b ) - преобразуеться в true
 
-alert(null || 2 && 3 || 4); // запнеться и вернет 
+alert(null || 2 && 3 || 4); // запнеться и вернет
 
 let a = [1, 2, 3];
 let b = [1, 2, 3]; // эти массивы не равны
@@ -591,5 +591,51 @@ for (let node of document.body.childNodes) {
 	}
 
 	console.log(node);
-} 
+}
 */
+
+/*LESSON 34 События на мобильных устройствах*/
+
+// touchstart
+// touchmove
+// touchend
+// touchenter
+// touchleave
+// touchcancel
+
+window.addEventListener('DOMContentLoaded', () => {
+	const btn = document.querySelector('.first__button');
+
+	btn.addEventListener('touchstart', (e) => {
+		e.preventDefault();
+
+		console.log('START');
+		console.log(e.targetTouches);
+	});
+
+	btn.addEventListener('touchmove', (e) => {
+		e.preventDefault();
+
+		console.log('MOVE');
+	});
+
+	btn.addEventListener('touchend', (e) => {
+		e.preventDefault();
+
+		console.log('END');
+	});
+});
+
+// touches
+// targetTouches
+// chengedTouches
+
+
+
+
+
+
+
+
+
+
